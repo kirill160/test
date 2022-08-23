@@ -2,7 +2,8 @@ package com.company.Function.Lesson4;
 
 public class Main {
     public static void main(String[] args) {
-       
+        System.out.println(evenValues());
+        System.out.println();
     }
     static int proisv(){
         int n = 10;
@@ -45,6 +46,7 @@ public class Main {
         int summ = 0;
         int[] arr  = new int [n];
         for (int i = 0; i < arr.length ; i++) {
+            arr[i] =(int) ((Math.random() * 10 + 10 + 1) - 10);
             if(arr[i] % 2 == 0){
                 summ +=arr[i];
             }
